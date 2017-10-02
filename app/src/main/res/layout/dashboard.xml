@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:context="com.inferno.projectx.dashboard.DashboardActivity">
+
+
+    <LinearLayout
+        android:id="@+id/add_panel"
+        android:orientation="vertical" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="100dp"
+        android:minWidth="100dp"
+        android:background="@drawable/view_bg"
+        android:padding="@dimen/padding_4dp"
+        android:layout_margin="@dimen/margin_24"
+        android:elevation="@dimen/card_elevation_6dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="40dp"
+            android:minWidth="40dp"
+            android:background="@drawable/ic_add"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:text="Assign"
+            android:textSize="@dimen/text_default"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/contract_panel"
+        android:orientation="vertical" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="100dp"
+        android:minWidth="100dp"
+        android:background="@drawable/view_bg"
+        android:padding="@dimen/padding_4dp"
+        android:layout_margin="@dimen/margin_24"
+        android:layout_toEndOf="@+id/add_panel"
+        android:elevation="@dimen/card_elevation_6dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="40dp"
+            android:minWidth="40dp"
+            android:background="@drawable/ic_contractor"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:text="Contractor"
+            android:textSize="@dimen/text_default"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/material_panel"
+        android:orientation="vertical" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="100dp"
+        android:minWidth="100dp"
+        android:background="@drawable/view_bg"
+        android:padding="@dimen/padding_4dp"
+        android:layout_margin="@dimen/margin_24"
+        android:layout_below="@+id/add_panel"
+        android:elevation="@dimen/card_elevation_6dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="40dp"
+            android:minWidth="40dp"
+            android:background="@drawable/ic_material"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/material"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:text="Materials"
+            android:textSize="@dimen/text_default"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/workers_panel"
+        android:orientation="vertical" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="100dp"
+        android:minWidth="100dp"
+        android:background="@drawable/view_bg"
+        android:padding="@dimen/padding_4dp"
+        android:layout_margin="@dimen/margin_24"
+        android:layout_below="@+id/contract_panel"
+        android:layout_toRightOf="@+id/material_panel"
+        android:elevation="@dimen/card_elevation_6dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="40dp"
+            android:minWidth="40dp"
+            android:background="@drawable/ic_workers"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/workers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:text="Workers"
+            android:textSize="@dimen/text_default"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/reports_panel"
+        android:orientation="vertical" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="100dp"
+        android:minWidth="100dp"
+        android:background="@drawable/view_bg"
+        android:padding="@dimen/padding_4dp"
+        android:layout_margin="@dimen/margin_24"
+        android:layout_below="@+id/material_panel"
+        android:elevation="@dimen/card_elevation_6dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="40dp"
+            android:minWidth="40dp"
+            android:background="@drawable/ic_report"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/report"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:text="Reports"
+            android:textSize="@dimen/text_default"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
